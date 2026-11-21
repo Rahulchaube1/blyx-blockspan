@@ -1,0 +1,14 @@
+use blockspan;
+
+fn main() {
+    let offset = 7.0;
+    let length = 4.0;
+    let block = 8.0;
+    let result = blockspan_align(offset, length, block);
+    if len(result) == 0 { println!("invalid"); return; }
+    let mut i = 0;
+    while i < len(result) {
+        println!(at(result, i));
+        i += 1;
+    }
+}
